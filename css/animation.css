@@ -1,0 +1,60 @@
+@keyframes typing {
+    0.0000%, 36.4642% { content: ""; }
+    1.1395%, 35.3247% { content: "L"; }
+    2.279%, 34.1852% { content: "La"; }
+    3.4185%, 33.0457% { content: "Lar"; }
+    4.558%, 31.9062% { content: "Larr"; }
+    5.6975%, 30.7667% { content: "Larry"; }
+    6.837%, 29.6272% { content: "Larry "; }
+    7.9765%, 28.4877% { content: "Larry D"; }
+    9.116%, 27.3482% { content: "Larry Da"; }
+    10.2555%, 26.2087% { content: "Larry Dan"; }
+    11.395%, 25.0692% { content: "Larry Dani"; }
+    12.5345%, 23.9297% { content: "Larry Danie"; }
+    13.674%, 22.7902% { content: "Larry Daniel"; }
+    14.8135%, 21.6507% { content: "Larry Daniels"; }
+
+  
+    39.8828%, 67.231% { content: ""; }
+    41.0223%, 66.0915% { content: "D"; }
+    42.1618%, 64.952% { content: "De"; }
+    43.3013%, 63.8125% { content: "Dev"; }
+    44.4408%, 62.673% { content: "Deve"; }
+    45.5803%, 61.5335% { content: "Devel"; }
+    46.7198%, 60.394% { content: "Develo"; }
+    47.8593%, 59.2545% { content: "Develop"; }
+    48.9988%, 58.115% { content: "Develope"; }
+    50.1383%, 56.9755% { content: "Developer"; }
+  
+    70.6496%, 95.7188% { content: ""; }
+    71.7891%, 94.5793% { content: "D"; }
+    72.9286%, 93.4398% { content: "De"; }
+    74.0681%, 92.3003% { content: "Des"; }
+    75.2076%, 91.1608% { content: "Desi"; }
+    76.3471%, 90.0213% { content: "Desig"; }
+    77.4866%, 88.8818% { content: "Design"; }
+    78.6261%, 87.7423% { content: "Designe"; }
+    79.7656%, 86.6028% { content: "Designer"; }
+ 
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .typewriter {
+    --caret: currentcolor;
+  }
+  
+  .typewriter::before {
+    content: "";
+    animation: typing 13.5s infinite;
+  }
+  
+  .typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
+  }
+  
